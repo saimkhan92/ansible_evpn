@@ -1,0 +1,20 @@
+
+underlay:
+    local:
+        asn: 65025
+    neighbors:
+      - interface: et-0/0/51
+        name: saimleaf-2
+        asn: 65028
+        peer_ip: 192.168.0.3
+        local_ip: 192.168.0.2
+      - interface: et-0/0/51
+        name: saimleaf-3
+        asn: 65029
+        peer_ip: 192.168.0.5
+        local_ip: 192.168.0.4
+      - interface: et-0/0/50
+        name: saimleaf-1
+        asn: 65027
+        peer_ip: 192.168.0.1
+        local_ip: 192.168.0.0

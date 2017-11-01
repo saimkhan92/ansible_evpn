@@ -1,0 +1,8 @@
+---
+- name: Ensures dir exists
+  file: path=host_vars/{{inventory_hostname}} state=directory
+  
+- name: Generate Tenant / VNI variables files
+  template: >
+    src=main.conf.j2
+    dest=host_vars/{{inventory_hostname}}/generated_tenant_vni.yaml

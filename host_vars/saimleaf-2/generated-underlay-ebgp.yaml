@@ -1,0 +1,15 @@
+
+underlay:
+    local:
+        asn: 65028
+    neighbors:
+      - interface: et-0/0/51
+        name: saimspine-2
+        asn: 65026
+        peer_ip: 192.168.0.8
+        local_ip: 192.168.0.9
+      - interface: et-0/0/50
+        name: saimspine-1
+        asn: 65025
+        peer_ip: 192.168.0.2
+        local_ip: 192.168.0.3
