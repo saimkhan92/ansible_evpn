@@ -1,0 +1,10 @@
+---
+############################################################
+- name: Create and apply configuration for Leaf QFX / L2
+  hosts: saimleaf,saimspine
+  connection: local
+  gather_facts: no
+  pre_tasks:
+    - include_vars: "{{ topology_file }}"
+  roles:
+    - common

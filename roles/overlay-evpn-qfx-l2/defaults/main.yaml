@@ -5,3 +5,35 @@ overlay:
     min_interval: 350
     multiplier: 3
     mode: automatic
+  local:
+      asn: 64555              # ASN to use for iBGP
+  neighbors:
+    - 1.1.0.25
+    - 1.1.0.26               # iBGP neighbors, usually spines loopback addresses
+  tenants:
+    tenant50:
+      id: 50
+      bridge_domains:
+      - vlan_id: 200
+        vni_id: 5200
+      - vlan_id: 201
+        vni_id: 5201
+      - vlan_id: 202
+        vni_id: 5202
+      - vlan_id: 203
+        vni_id: 5203
+      - vlan_id: 204
+        vni_id: 5204
+    tenant51:
+      id: 51
+      bridge_domains:
+      - vlan_id: 205
+        vni_id: 5205
+      - vlan_id: 206
+        vni_id: 5206
+      - vlan_id: 207
+        vni_id: 5207
+      - vlan_id: 208
+        vni_id: 5208
+      - vlan_id: 209
+        vni_id: 5209

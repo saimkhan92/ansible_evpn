@@ -38,21 +38,21 @@ vqfx:                           # true / false*
 ```yaml
 # File group_vars/all/common.yaml
 global:
-    root_hash: $1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/
-    login_message: This is the property of Example Corp. Do not login without express permission.
+    root_hash: $1$T1pkl3nw$Ph4CZ3ZlZ/u8ZCqV9NsAd.
+    login_message: This is the property of Juniper Corp. Do not login without express permission.
     time_zone: America/Los_Angeles
     name_servers:
-    - 192.168.5.68
-    - 192.168.60.131
+    - 172.29.131.60
+    - 8.8.8.8
     ntp_servers:
-    - 172.17.28.5
+    - 172.25.113.150
     snmp:
-        location: "Site 1"
-        contact: John Doe
+        location: "NYC-POC"
+        contact: Anurag Menon Saim Khan
         polling:
         - community: public
     routes:
-        172.0.0.0/8: 10.94.194.254
+        0.0.0.0/0: 172.25.114.1
 
 
 

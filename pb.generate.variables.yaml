@@ -28,6 +28,5 @@
   gather_facts: no
   pre_tasks:
     - include_vars: "{{ topology_file }}"
-    - include_vars: "group_vars/all/generated_p2p_ips.yaml"
   roles:
     - generate-underlay-bgp

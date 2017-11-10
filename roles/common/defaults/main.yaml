@@ -1,0 +1,17 @@
+---
+global:
+    root_hash: $1$T1pkl3nw$Ph4CZ3ZlZ/u8ZCqV9NsAd.
+    login_message: This is the property of Juniper Corp. Do not login without express permission.
+    time_zone: America/Los_Angeles
+    name_servers:
+    - 172.29.131.60
+    - 8.8.8.8
+    ntp_servers:
+    - 172.25.113.150
+    snmp:
+        location: "NYC-POC"
+        contact: Anurag Menon Saim Khan
+        polling:
+        - community: public
+    routes:
+        0.0.0.0/0: 172.25.114.1
