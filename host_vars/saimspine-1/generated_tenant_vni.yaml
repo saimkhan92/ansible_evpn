@@ -1,5 +1,6 @@
 
 overlay:
+    cluster: 
     tenants:
       tenant50:
         id: 50

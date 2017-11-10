@@ -6,15 +6,15 @@ underlay:
       - interface: et-0/0/51
         name: saimleaf-2
         asn: 65028
-        peer_ip: 192.168.0.3
-        local_ip: 192.168.0.2
-      - interface: et-0/0/51
+        peer_ip: 192.168.0.9
+        local_ip: 192.168.0.8
+      - interface: et-0/0/52
         name: saimleaf-3
         asn: 65029
-        peer_ip: 192.168.0.5
-        local_ip: 192.168.0.4
+        peer_ip: 192.168.0.11
+        local_ip: 192.168.0.10
       - interface: et-0/0/50
         name: saimleaf-1
         asn: 65027
-        peer_ip: 192.168.0.1
-        local_ip: 192.168.0.0
+        peer_ip: 192.168.0.7
+        local_ip: 192.168.0.6

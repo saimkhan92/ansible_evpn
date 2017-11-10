@@ -92,30 +92,21 @@ topo:
   saimspine-1:
     port1: { name: et-0/0/50,    peer: saimleaf-1,     pport: port1,     type: ebgp, link: 1,   linkend: 1 }
     port2: { name: et-0/0/51,    peer: saimleaf-2,     pport: port1,     type: ebgp, link: 2,   linkend: 1 }
-    port3: { name: et-0/0/51,    peer: saimleaf-3,     pport: port1,     type: ebgp, link: 3,   linkend: 1 }
+    port3: { name: et-0/0/52,    peer: saimleaf-3,     pport: port1,     type: ebgp, link: 3,   linkend: 1 }
 
   saimspine-2:
-    port1: { name: et-0/0/50,    peer: saimleaf-1,     pport: port2,     type: ebgp, link: 1,   linkend: 1 }
-    port2: { name: et-0/0/51,    peer: saimleaf-2,     pport: port2,     type: ebgp, link: 2,   linkend: 1 }
-    port3: { name: et-0/0/51,    peer: saimleaf-3,     pport: port2,     type: ebgp, link: 3,   linkend: 1 }
+    port1: { name: et-0/0/50,    peer: saimleaf-1,     pport: port2,     type: ebgp, link: 4,   linkend: 1 }
+    port2: { name: et-0/0/51,    peer: saimleaf-2,     pport: port2,     type: ebgp, link: 5,   linkend: 1 }
+    port3: { name: et-0/0/52,    peer: saimleaf-3,     pport: port2,     type: ebgp, link: 6,   linkend: 1 }
 
   saimleaf-1:
     port1: { name: et-0/0/50,    peer: saimspine-1,     pport: port1,     type: ebgp, link: 1,   linkend: 2 }
     port2: { name: et-0/0/51,    peer: saimspine-2,     pport: port1,     type: ebgp, link: 4,   linkend: 2 }
-    port3: { name: xe-0/0/12,    peer: access,       pport: unknown }
-    port4: { name: xe-0/0/13,    peer: access,       pport: unknown }
-    port5: { name: et-0/0/53,    peer: access,       pport: unknown }
 
   saimleaf-2:
     port1: { name: et-0/0/50,    peer: saimspine-1,     pport: port2,     type: ebgp, link: 2,   linkend: 2 }
     port2: { name: et-0/0/51,    peer: saimspine-2,     pport: port2,     type: ebgp, link: 5,   linkend: 2 }
-    port3: { name: xe-0/0/12,    peer: access,       pport: unknown }
-    port4: { name: xe-0/0/13,    peer: access,       pport: unknown }
-    port5: { name: et-0/0/53,    peer: access,       pport: unknown }
 
   saimleaf-3:
     port1: { name: et-0/0/50,    peer: saimspine-1,     pport: port3,     type: ebgp, link: 3,   linkend: 2 }
     port2: { name: et-0/0/51,    peer: saimspine-2,     pport: port3,     type: ebgp, link: 6,   linkend: 2 }
-    port3: { name: xe-0/0/12,    peer: access,       pport: unknown }
-    port4: { name: xe-0/0/13,    peer: access,       pport: unknown }
-    port5: { name: et-0/0/53,    peer: access,       pport: unknown }

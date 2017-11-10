@@ -8,7 +8,7 @@ underlay:
         asn: 65028
         peer_ip: 192.168.0.3
         local_ip: 192.168.0.2
-      - interface: et-0/0/51
+      - interface: et-0/0/52
         name: saimleaf-3
         asn: 65029
         peer_ip: 192.168.0.5

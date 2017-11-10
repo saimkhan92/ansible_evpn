@@ -1,6 +1,4 @@
 
-
-
 underlay:
   mtu_phy_int: 9192
   mtu_logical_int: 9000
@@ -10,5 +8,5 @@ underlay:
     multiplier: 3
     mode: automatic
   networks:
-    loopbacks: 1.1.0.0/16
-    underlay: 172.16.0.0/16
+    loopbacks: 10.0.0.0/8
+    underlay: 192.168.0.0/16
