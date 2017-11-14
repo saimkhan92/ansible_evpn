@@ -2,28 +2,60 @@
 overlay:
     tenants:
       tenant50:
+        lo0_ip: 101.0.50.26
         id: 50
         bridge_domains:
         - vlan_id: 200
-          vni_id: 5200
+          vni_id: 9200
+          vip_ip: 10.0.1.1
+          local_ip: 10.0.1.26
+          mask: 24
         - vlan_id: 201
-          vni_id: 5201
+          vni_id: 9201
+          vip_ip: 10.0.2.1
+          local_ip: 10.0.2.26
+          mask: 24
         - vlan_id: 202
-          vni_id: 5202
+          vni_id: 9202
+          vip_ip: 10.0.3.1
+          local_ip: 10.0.3.26
+          mask: 24
         - vlan_id: 203
-          vni_id: 5203
+          vni_id: 9203
+          vip_ip: 10.0.4.1
+          local_ip: 10.0.4.26
+          mask: 24
         - vlan_id: 204
-          vni_id: 5204
+          vni_id: 9204
+          vip_ip: 10.0.5.1
+          local_ip: 10.0.5.26
+          mask: 24
       tenant51:
+        lo0_ip: 101.0.51.26
         id: 51
         bridge_domains:
         - vlan_id: 205
-          vni_id: 5205
+          vni_id: 9205
+          vip_ip: 10.0.6.1
+          local_ip: 10.0.6.26
+          mask: 24
         - vlan_id: 206
-          vni_id: 5206
+          vni_id: 9206
+          vip_ip: 10.0.7.1
+          local_ip: 10.0.7.26
+          mask: 24
         - vlan_id: 207
-          vni_id: 5207
+          vni_id: 9207
+          vip_ip: 10.0.8.1
+          local_ip: 10.0.8.26
+          mask: 24
         - vlan_id: 208
-          vni_id: 5208
+          vni_id: 9208
+          vip_ip: 10.0.9.1
+          local_ip: 10.0.9.26
+          mask: 24
         - vlan_id: 209
-          vni_id: 5209
+          vni_id: 9209
+          vip_ip: 10.0.10.1
+          local_ip: 10.0.10.26
+          mask: 24

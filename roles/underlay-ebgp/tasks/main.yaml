@@ -1,4 +1,7 @@
 ---
+- name: Ensures dir exists
+  file: path={{ build_dir }}/ state=directory
+
 - name: Building underlay configuration with EBGP
   template: >
     src=main.conf.j2

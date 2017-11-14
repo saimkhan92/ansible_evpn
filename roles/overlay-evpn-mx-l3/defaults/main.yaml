@@ -1,7 +1,7 @@
-
-
 overlay:
   bfd:
     min_interval: 350
     multiplier: 3
     mode: automatic
+  local:
+    asn: 64555

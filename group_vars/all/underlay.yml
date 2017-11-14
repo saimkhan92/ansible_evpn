@@ -1,4 +1,0 @@
-underlay:
-   networks:
-       loopbacks: 10.0.0.0/8
-       underlay: 192.168.0.0/16

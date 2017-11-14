@@ -1,0 +1,4 @@
+pgsql_extensions:
+  - ext1
+  - ext2
+  - ext3
